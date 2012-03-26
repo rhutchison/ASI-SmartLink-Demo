@@ -1,0 +1,5 @@
+        <ul class="nav nav-tabs">
+<% _.each(views, function(tab) { %>
+          <li<% if (tab.route == Backbone.history.fragment) { %> class="active"<% } %>><a href="/#<%= tab.route %>"><%= tab.label %></a></li>
+<% }); %>
+        </ul>

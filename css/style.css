@@ -1,0 +1,75 @@
+.fl{float:left}.fr{float:right}.ac{text-align:center}.ar{text-align:right}
+
+body {
+    padding-top: 70px;
+    padding-bottom: 40px;
+}
+
+.navbar .divider-vertical {
+  height: 50px;
+}
+
+.navbar .nav > li > a {
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px 0;
+  vertical-align: middle;
+}
+
+.navbar .brand {
+  background: url("http://stage-developers.asicentral.com/images/devl/asi_mini.png") no-repeat scroll 0 15px transparent;
+  color: #fff;
+  font-family:Arial, Helvetica, sans-serif;
+  font-size:24px;
+  margin-left: 0;
+  padding:11px 20px 12px 40px;
+}
+
+.nav .avatar {
+  border: 1px solid #999;
+  margin-right: .25em;
+  vertical-align: -9px;
+  height:24px;
+  width:24px;
+}
+
+.navbar .nav .dropdown-toggle .caret, .navbar .nav .open.dropdown .caret {
+  border-top-color: #666;
+  vertical-align: 2px;
+}
+
+.dropdown.open .dropdown-toggle {
+  color: #666;
+}
+
+.nav .signup .btn {
+  font-weight: bold;
+  height: 20px;
+  line-height: 20px;
+  margin: 9px 0;
+  padding: 5px 8px;
+}
+
+h1.avatar { line-height:58px; height:auto; }
+h1.avatar .thumbnail { margin-right:15px; vertical-align:middle;}
+
+.form-search {
+  margin-top:20px;
+}
+
+.navbar-search {
+  margin-top:11px;
+}
+
+.navbar-search .btn, .navbar-search .btn-group,
+.navbar-search input {
+  margin:0;
+}
+
+.visual_search {
+  margin-top:8px;
+}
+
+.results .thumbnail {
+  height:210px;
+}

@@ -1,0 +1,61 @@
+      <div class="row">
+        <div class="span12">
+          <div id="section-header"></div>
+
+          <div class="row">
+            <div class="span6">
+              Result <%= ((Page*ResultsPerPage) - ResultsPerPage) + 1 %> - <%= Page*ResultsPerPage %> of <%= ResultsTotal %>
+            </div>
+            <div class="span6">
+              <ul class="pager pull-right">
+<% if (typeof(Previous) !== 'undefined') { %>
+                <li>
+                  <a href="<%= Previous %>">Previous</a>
+                </li>
+<% } %>
+<% if (typeof(Next) !== 'undefined') { %>
+                <li>
+                 <a href="<%= Next %>">Next</a>
+                </li>
+<% } %>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="results span12">
+              <ul class="thumbnails">
+<% _.each(Results, function(Product) { %>
+                <li class="span3">
+                  <a href="/#!/product/<%= Product.Id %>" class="thumbnail">
+                    <img src="http://stage-api-2.asicentral.com/v1/<%= Product.ImageUrl %>" alt="">
+                    <div class="caption">
+                      <h5><%= Product.Name.trunc(30, true) %></h5>
+                      <p><%= Product.Description.trunc(90, true) %></p>
+                    </div>
+                  </a>
+                </li>
+<% }); %>
+              </ul>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="span12">
+              <ul class="pager">
+<% if (typeof(Previous) !== 'undefined') { %>
+                <li>
+                  <a href="<%= Previous %>">Previous</a>
+                </li>
+<% } %>
+<% if (typeof(Next) !== 'undefined') { %>
+                <li>
+                 <a href="<%= Next %>">Next</a>
+                </li>
+<% } %>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>

@@ -1,0 +1,65 @@
+      <div class="row">
+        <div class="span12">
+          <div id="section-header"></div>
+
+          <div class="row">
+            <div class="span6">
+              <h1><%= Name %></h1>
+              <table class="table table-striped">
+                <tbody>
+                  <tr>
+<% if (Contacts) { %>
+                    <td><h6><i class="icon-user"></i> Contacts:</h6></td>
+                    <td>
+<% _.each(Contacts, function(c) { %>
+                      <%= c.Name %>, <%= c.Title %><br>
+<% }); %>
+                    </td>
+                  </tr>
+<% } %>
+<% if (Phone.Work || Phone.TollFree) { %>
+                  <tr>
+                    <td><h6><i class="icon-home"></i> Office Phone:</h6></td>
+                    <td>
+<% if (Phone.TollFree) { %>
+                      <%= Phone.TollFree %><br>
+<% } %>
+                      <%= Phone.Work %>
+                    </td>
+                  </tr>
+<% } %>
+<% if (Fax.Work || Fax.TollFree) { %>
+                  <tr>
+                    <td><h6><i class="icon-inbox"></i> Fax:</h6></td>
+                    <td>
+<% if (Fax.TollFree) { %>
+                      <%= Fax.TollFree %><br>
+<% } %>
+                      <%= Fax.Work %>
+                    </td>
+                  </tr>
+<% } %>
+<% if (Email) { %>
+                  <tr>
+                    <td><h6><i class="icon-envelope"></i> Email:</h6></td>
+                    <td><a href="mailto:<%= Email %>"><%= Email %></a></td>
+                  </tr>
+<% } %>
+<% if (Websites) { %>
+                  <tr>
+                    <td><h6>Website(s):</h6></td>
+                    <td>
+<% _.each(Websites, function(Website) { %>
+                      <a href="<%= Website %>"><%= Website %></a><br>
+<% }); %>
+                    </td>
+                  </tr>
+<% } %>
+                </tbody>
+              </table>
+            </div>
+            <div class="span6">
+            </div>
+          </div>
+        </div>
+      </div>

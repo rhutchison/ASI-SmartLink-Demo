@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head runat="server">
+    <title></title>
+    <link href="/css/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="/css/style.css" rel="stylesheet" type="text/css" />
+
+    <!--[if (!IE)|(gte IE 8)]><!-->
+    <link href="/assets/visualsearch/css/visualsearch-datauri.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+    <!--[if lte IE 7]><!-->
+    <link href="/assets/visualsearch/css/visualsearch.css" media="screen" rel="stylesheet" type="text/css" />
+    <!--<![endif]-->
+
+    <script type="text/javascript" src="/js/utils.js"></script>
+  </head>
+  <body>
+    <div class="navbar navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </a>
+          <a class="brand" href="http://asi.local/">Demo</a>
+          <div class="nav-collapse">
+            <div class="visual_search pull-left span6"></div>
+<!--
+            <form class="navbar-search pull-left">
+              <input id="q" name="q" type="text" class="input-xlarge">
+              <button type="submit" class="btn btn-primary">Search</button>
+            </form>
+-->
+            <ul class="nav pull-right">
+<!--
+              <li><a href="#">Sign In</a></li>
+              <li><a href="#">Sign up</a></li>
+-->
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="https://secure.gravatar.com/avatar/66eb45d17be2c86198e5f11102688600?size=24" class="avatar">Ryan Hutchison <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#">Account settings</a></li>
+                  <li><a href="#">Privacy settings</a></li>
+                  <li><a href="#">Sign out</a></li>
+                  <li class="divider"></li>
+                  <li><a href="#">Help</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div><!--/.nav-collapse -->
+        </div>
+      </div>
+    </div>
+    <div id="main" role="main" class="container"></div>
+
+    <!-- Application source -->
+    <script data-main="js/config" src="/js/vendor/require-min.js"></script>
+  </body>
+</html>
